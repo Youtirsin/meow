@@ -1,0 +1,51 @@
+body,html{
+    background: #2c3e50;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+}
+#note{
+    color: #ecf0f1;
+    text-align: center;
+    width:331.337px;
+    height:136.313px;
+    min-width:331.337px;
+    min-height:136.313px;
+}
+#container{
+    width: 600px;
+    height: 256px;
+    min-width: 600px;
+    min-height: 256px;
+    position: relative;
+}
+.piece{
+    display: block;
+    position: absolute;
+    background: #1abc9c;
+    opacity:0.6;
+    width: 150px;
+    height: 84px;
+    min-width: 150px;
+    min-height: 84px;
+}
+.piece:hover{
+    transform: scale(1.2);
+    opacity:1;
+    transition: 1s;
+    z-index: 1;
+}
+#gif{
+    display: block;
+    position: absolute;
+    opacity:0.6;
+}
+img{
+    user-select: none;
+}
