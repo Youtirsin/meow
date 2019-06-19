@@ -1,3 +1,11 @@
+function preload() {
+    var imgs = new Array();
+    for (var i = 0; i < preload.arguments.length; i++) {
+        imgs[i] = new Image();
+        imgs[i].src = preload.arguments[i];
+    }
+}
+
 $(document).ready(function () {
     $('.piece').each(function (index) {
         $(this).css({
@@ -28,10 +36,33 @@ $(document).ready(function () {
                 $('#gif').css({
                     'left': $('#container').css('left'),
                     'top': $('#container').css('top'),
-                    'opacity':1,
-                    'transition':'opacity 4s'
+                    'opacity': 1,
+                    'transition': 'opacity 4s'
                 });
             }
         });
     });
 });
+preload(
+    'pieces/cat00.png',
+    'pieces/cat01.png',
+    'pieces/cat02.png',
+    'pieces/cat03.png',
+
+    'pieces/cat10.png',
+    'pieces/cat11.png',
+    'pieces/cat12.png',
+    'pieces/cat13.png',
+
+    'pieces/cat20.png',
+    'pieces/cat21.png',
+    'pieces/cat22.png',
+    'pieces/cat23.png',
+
+    'pieces/cat30.png',
+    'pieces/cat31.png',
+    'pieces/cat32.png',
+    'pieces/cat33.png',
+
+    'cat.gif'
+);
