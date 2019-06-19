@@ -45,6 +45,8 @@ if(!IsPC()){
     });
     
     preload(
+        'cat.gif',
+        
         'pieces/cat00.png',
         'pieces/cat01.png',
         'pieces/cat02.png',
@@ -63,9 +65,7 @@ if(!IsPC()){
         'pieces/cat30.png',
         'pieces/cat31.png',
         'pieces/cat32.png',
-        'pieces/cat33.png',
-    
-        'cat.gif'
+        'pieces/cat33.png'
     );
 }
 function IsPC() {

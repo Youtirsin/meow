@@ -44,6 +44,8 @@ $(document).ready(function () {
     });
 });
 preload(
+    'cat.gif',
+    
     'pieces/cat00.png',
     'pieces/cat01.png',
     'pieces/cat02.png',
@@ -62,7 +64,5 @@ preload(
     'pieces/cat30.png',
     'pieces/cat31.png',
     'pieces/cat32.png',
-    'pieces/cat33.png',
-
-    'cat.gif'
+    'pieces/cat33.png'
 );
