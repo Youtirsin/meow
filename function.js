@@ -8,7 +8,9 @@ function preload() {
 if (!IsPC()) {
     window.location.href = 'mobile.html';
 } else {
-    $.get('cat.gif', function () {
+    var i=new Image();
+    i.src='cat.gif';
+    i.onload=function(){
         $(document).ready(function () {
             $('#note').html("<h1>Click the square</h1>");
             $('.piece').each(function (index) {
@@ -45,7 +47,7 @@ if (!IsPC()) {
                 });
             });
         });
-    });
+    };
 
     preload(
         'pieces/cat00.png',

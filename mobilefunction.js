@@ -5,7 +5,9 @@ function preload() {
         imgs[i].src = preload.arguments[i];
     }
 }
-$.get('cat.gif', function () {
+var i= new Image();
+i.src='cat.gif';
+i.onload=function(){
     $(document).ready(function () {
         $('#note').html("<h1>Tap the square</h1>");
         $('.piece').each(function (index) {
@@ -44,7 +46,7 @@ $.get('cat.gif', function () {
             });
         });
     });
-});
+};
 
 preload(
     'pieces/cat00.png',
